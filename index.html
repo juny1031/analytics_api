@@ -15,9 +15,8 @@
     region: "na1",
     portalId: "19924397",
     formId: "bd2b1b9f-8771-406f-a225-42675db8fd4f"
-  });
-  hbspt.forms.onFormReady(function(form) {
-    form.querySelector("#firstname-bd2b1b9f-8771-406f-a225-42675db8fd4f").value = "あああ";
+    onFormReady: function($form) {
+        $form.find('input[name="profile"]').val("value-to-populate");
   });
 </script>
     
